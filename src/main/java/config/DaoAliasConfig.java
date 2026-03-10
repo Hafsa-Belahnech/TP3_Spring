@@ -11,5 +11,5 @@ public class DaoAliasConfig {
     @Bean(name = "dao")
     public IDao daoAlias(DaoApi target) {
         return target; // alias "dao" -> "daoApi"
-    }
+    }//On change the "target", ici DaoApi, on peut écrire DaoImpl, DaoFile, etc...
 }
