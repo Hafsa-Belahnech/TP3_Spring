@@ -11,7 +11,7 @@ import java.util.Map;
 @PropertySource("classpath:app.properties")
 public class PropertyDrivenConfig {
 
-    @Value("${dao.target:dao}") // "dao" est la valeur par défaut si absent du fichier
+    @Value("${dao.target:dao}") // dao ici est la valeur par défaut si absent du fichier, alors on la change 
     private String target;
 
     @Bean(name = "dao")
