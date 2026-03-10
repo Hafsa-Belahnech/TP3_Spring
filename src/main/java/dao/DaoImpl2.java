@@ -4,7 +4,7 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 
-@Primary
+@Primary // par défaut 
 @Component("dao2")
 @Profile("dev")
 public class DaoImpl2 implements IDao {
